@@ -1,0 +1,71 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>formulario</title>
+		<style type="text/css">
+			body{
+				margin:auto;
+				text-align:center;
+			}
+			label{
+				display:inline-block;
+			}
+			input, select{
+				display:block;
+				margin:auto;
+				margin-top:4px;
+				text-align:center;
+			}
+			
+		</style>
+		<!-- <link rel="stylesheet" type="text/css" href=".css"> -->
+	</head>
+	<body>
+		<script language="JavaScript" type="text/javaScript">
+			
+			function cambio(){
+				var type=document.getElementById("tipo");
+				type.innerHTML=document.getElementById("categorias").value.toLowerCase();
+				
+				
+				var arrayCategorias = new Array(
+				
+				["Clase","Centro"],
+				["ESO","Bachillerato"],
+				["Notas","Escolarización"]
+				
+				);
+				
+				var seleccionado1=document.getElementById("categorias").selectedIndex;
+				var opciones1=arrayCategorias[seleccionado1];
+				for(var i=0;i<opciones1.length;i++){
+					document.getElementById("datos").options[i].innerHTML=opciones1[i];
+				}
+			
+		}
+			
+		</script>
+		<form>
+			<h2>Bienvenido a la Secretaria Online</h2>
+			<label>Seleccione el tipo de documento</label>
+			<select id="categorias" onchange="cambio()">
+				<option>Normativa</option>
+				<option>Solicitud de plaza</option>
+				<option>Solicitud de certificado</option>
+			</select>
+			<label>Seleccione el tipo de <span id="tipo">normativa</span></label>
+			<select id="datos">
+				<option>Clase</option>
+				<option>Centro</option>
+			</select>
+			
+			<input type="submit" />
+		</form>
+		
+		
+		
+	</body>
+</html>
