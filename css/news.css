@@ -1,9 +1,17 @@
-p {
+
+section p {
     margin: 0;
     margin-bottom: 20px;
+	font-family: 'Open Sans';
+}
+
+section h3 {
+	text-align: center;
 }
 
 .left{
+	box-sizing: border-box;
+	padding: 20px;
     display: inline-block;
     width: 45%;
     height: 45%;
@@ -13,6 +21,8 @@ p {
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .5);
 }
 .right{
+	box-sizing: border-box;
+	padding: 20px;
     display: inline-block;
     width: 45%;
     height: 45%;
@@ -22,22 +32,24 @@ p {
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .5);
 }
 
-div > img{
+section div > img{
     width: 200px;
     height: 200px;
     float: left;
     margin-right: 2%;
 }
-a {
+section a {
     float: right;
     color: #155EA9;
     font-size: 1.5em;
     text-decoration: none;
     vertical-align: middle;
+	font-family: 'Open Sans';
 }
 
-a img {
+section a img {
     width: 25px;
     height: 25px;
     vertical-align: middle;
+	margin-left: 10px;
 }
