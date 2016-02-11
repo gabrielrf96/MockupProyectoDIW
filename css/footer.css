@@ -1,0 +1,85 @@
+footer {
+	overflow: hidden;
+	background: linear-gradient(to bottom, #3574B6, #155EA9);
+	font-family: Montserrat;
+	color: white;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer div{
+	text-align:left;
+	margin:auto;
+}
+
+footer h3 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+	display: block;
+	width: 100%;
+	color: white;
+}
+
+footer p {
+	display: block;
+	margin: 1%;
+	text-align: center;
+}
+
+#redes img {
+	margin-left: 1%;
+	width: 35px;
+	float: right;
+	transition: all .25s;
+}
+
+footer a:hover img {
+	transform: scale(1.1,1.1);
+}
+
+#mapa{
+	display: inline-block;
+	width:30%;
+	height: 100%;
+}
+
+#centro {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+}
+
+#logoFooter {
+	width: 50%;
+	max-width: 150px;
+	margin: auto;
+}
+
+#derecha{
+	display: inline-block;
+	width:30%;
+	height: 100%;
+}
+
+#redes{
+	display:inline-block;
+	width:100%;
+}
+
+#contacto{
+	text-align: center;
+	width:100%;
+}
+
+#contacto p {
+	text-align: right;
+}
