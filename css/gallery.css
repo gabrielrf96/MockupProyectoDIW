@@ -1,9 +1,13 @@
 img.gallery {
-	visibility:hidden;
+	/*visibility:hidden;*/
+	opacity: .45;
+	transition: all .25s;
+	transform: scale(.75, .75);
 }
 
 a:hover img.gallery {
 	visibility:visible;
+	transform: scale(.9, .9);
 }
 
 #galleryPrev, #galleryNext {
