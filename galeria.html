@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es-ES">
 	<head>
-		<meta charset="UTF-8"/>
-		<title>Ejemplo formulario</title>
+		<title>Página información</title>
 		<meta name="author" content="Judix"/>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="css/header.css"/>
 		<link rel="stylesheet" href="css/common.css"/>
-		<link rel="stylesheet" href="css/info.css"/>
-		<link rel="stylesheet" href="css/form.css"/>
+		<link rel="stylesheet" href="css/gallery.css"/>
 		<link rel="stylesheet" href="css/footer.css"/>
 		<script type="text/javascript" src="js/slider.js"></script>
 		<script type="text/javascript" src="js/expand.js"></script>
 		<script type="text/javascript" src="js/stickynav.js"></script>
-		<script type="text/javascript" src="js/form.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
 	</head>
-	<body>
+	<body onload="loadGallery();">
 		<header>
 			<div id="identificacion">
 				<img id="logo" src="img/logo/logo-white.png" alt="Logo del IES El Rincón"/>
@@ -37,7 +35,7 @@
 					<a href=""><img src="img/icons/building-white.svg"/>Nuestro centro</a>
 					<ul class="subnav">
 						<li><a href="informacion.html">Oferta educativa</a></li
-						><li><a href="">Secretaría online</a></li
+						><li><a href="Formulario.html">Secretaría online</a></li
 						><li><a href="informacion.html">Proyectos</a></li
 						><li><a href="informacion.html">Distinciones y premios</a></li
 						><li><a href="galeria.html">Galería</a></li
@@ -82,23 +80,25 @@
 				</div>
 			</div>
 		</div>
+		
 		<section>
-			<form>
-				<h2>¡Bienvenido a la Secretaría Online!</h2>
-					<h3>Seleccione el tipo de documento</h3>
-					<select id="categorias" onchange="cambio()">
-						<option>Normativa</option>
-						<option>Solicitud de plaza</option>
-						<option>Solicitud de certificado</option>
-					</select>
-					<h3>Seleccione el tipo de <span id="tipo">normativa</span></h3>
-					<select id="datos">
-						<option>Clase</option>
-						<option>Centro</option>
-					</select>
-				<input type="submit" value="Solicitar"/>
-			</form>
+			<h2>Galería del centro</h2>
+			<div class="selectContainer">
+				<select>
+					<option>Categoría 1</option>
+					<option>Categoría 2</option>
+				</select>
+			</div>
+			<div class="imgDisplay">
+				<img alt="Imagen central" id="display" src="img/gallery/rincon1.jpg" />
+				<a id="galleryPrev" href="" onclick="previousGalleryImg(); return false;"><img class="gallery" src="img/icons/chevron-with-circle-left-white.svg" alt="Anterior"/></a>
+				<a id="galleryNext" href="" onclick="nextGalleryImg(); return false;"><img class="gallery" src="img/icons/chevron-with-circle-right-white.svg" alt="Siguiente"/></a>
+			</div>
+			<div id="minis" class="minisDisplay">
+				<img class="arrow" src="img/icons/chevron-with-circle-left.svg" alt="Anterior" onclick="previousScroll();" /><img onclick="setCentralImg(this);" class="mini0" /><img onclick="setCentralImg(this);" class="mini0" /><img onclick="setCentralImg(this);" class="mini0" /><img onclick="setCentralImg(this);" class="mini0" /><img onclick="setCentralImg(this);" class="mini1" /><img onclick="setCentralImg(this);" class="mini1" /><img onclick="setCentralImg(this);" class="mini1" /><img onclick="setCentralImg(this);" class="mini1" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img class="arrow" src="img/icons/chevron-with-circle-right.svg" alt="Siguiente" onclick="nextScroll();" />
+			</div>
 		</section>
+		
 		<footer>
 			<div id="mapa">
 				<h3>Mapa del sitio</h3>

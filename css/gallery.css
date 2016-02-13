@@ -1,0 +1,140 @@
+img.gallery {
+	visibility:hidden;
+}
+
+a:hover img.gallery {
+	visibility:visible;
+}
+
+#galleryPrev, #galleryNext {
+	width: 8%;
+	position: absolute;
+	text-align: center;
+	line-height: 25vw;
+	transition: all .25s;
+}
+
+#galleryPrev {
+	background: transparent;
+	height: 100%;
+	left: 0;
+}
+
+#galleryNext {
+	right: 0;
+	height: 100%;
+	background: transparent;
+}
+
+#galleryPrev:hover {
+	background: linear-gradient(to right, rgba(0,0,0,.75), transparent);
+}
+
+#galleryNext:hover {
+	background: linear-gradient(to left, rgba(0,0,0,.75), transparent);
+}
+
+.imgDisplay {
+	border: 0.3em #80ADDC solid;
+	height: 25em;
+	width:80%;
+	margin:auto;
+	text-align:center;
+	position:relative;
+}
+
+div.imgDisplay img {
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	margin:auto;
+}
+
+.minisDisplay {
+	height:4em;
+	width:80%;
+	margin:0.3em auto auto auto;
+}
+
+.mini0, .mini1, .mini2 {
+	border: 0.1em #155EA9 solid;
+	width:6.71%;
+	display:inline-block;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.mini0 {
+	height:100%;
+}
+
+.mini1 {
+	height:100%;
+}
+
+.mini2 {
+	height:100%;
+}
+
+.selectContainer {
+	text-align:center;
+	margin-bottom:1em;
+}
+
+section select {
+	width:30em;
+}
+
+.arrow {
+	width: 3%;
+	height:100%
+}
+
+.arrow:active {
+	background-color:#80ADDC;
+}
+
+.selected {
+border:0.5em #155EA9 solid;
+}
+
+@media screen and (max-width: 1000px) {
+	.mini0, .mini1 {
+		width:11.5%;
+		border: 0.1em #155EA9 solid;
+	}
+	
+	.selected {
+	border:0.5em #155EA9 solid;
+	}
+	
+	.mini2 {
+		width:0;
+		border:0;
+	}
+	.arrow {
+	width: 4%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.mini0 {
+		width:21.5%;
+		border: 0.1em #155EA9 solid;
+	}
+	
+	.selected {
+	border:0.5em #155EA9 solid;
+	}
+	
+	.mini1, .mini2 {
+		width:0;
+		border:0;
+	}
+	.arrow {
+		width: 7%;
+	}
+}
