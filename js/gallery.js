@@ -20,12 +20,12 @@ function placeImg() {
 	if((minis.length-2)<numPic)
 		for(var i=1;i<(minis.length-1);i++) {
 			if((firstPic+i-1)<=numPic&&i<boxNumber+1)
-				minis[i].src = "img/gallery/rincon" + (firstPic+i-1) + ".jpg";
+				minis[i].src = "../img/gallery/rincon" + (firstPic+i-1) + ".jpg";
 		}
 	else
 		for(var i=1;i<numPic+1;i++)
 			if((firstPic+i-1)<=numPic&&i<boxNumber+1)
-				minis[i].src = "img/gallery/rincon" + (firstPic+i-1) + ".jpg";
+				minis[i].src = "../img/gallery/rincon" + (firstPic+i-1) + ".jpg";
 }
 
 function setCentralImg(pic) {

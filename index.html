@@ -12,6 +12,9 @@
         <script type="text/javascript" src="js/slider.js"></script>
         <script type="text/javascript" src="js/expand.js"></script>
         <script type="text/javascript" src="js/stickynav.js"></script>
+		<script type="text/javascript" src="js/indexIdentifier.js"></script>
+		<script type="text/javascript" src="js/indexMarker.js"></script>
+		<script type="text/javascript" src="js/responsiveSubmenu.js"></script>
     </head>
     <body>
         <header>
@@ -28,41 +31,47 @@
         </header>
         <nav>
             <ul>
-                <li><a href="noticias.html"><img src="img/icons/home-white.svg"/>Inicio</a></li
-                ><li class="from-tablet-up activo"><a href="#noti"><img src="img/icons/news-white.svg"/>Noticias</a></li
+                <li id="index" class="activo"><a href="index.html"><img src="img/icons/home-white.svg"/>Inicio</a></li
+                ><li id="news" class="from-tablet-up"><a id="newsLink" href="./index.html#noti"><img src="img/icons/news-white.svg"/>Noticias</a></li
                 ><li class="from-tablet-up">
-                    <a href=""><img src="img/icons/building-white.svg"/>Nuestro centro</a>
-                    <ul class="subnav">
-                        <li><a href="informacion.html">Oferta educativa</a></li
-                        ><li><a href="Formulario.html">Secretaría online</a></li
-                        ><li><a href="informacion.html">Proyectos</a></li
-                        ><li><a href="informacion.html">Distinciones y premios</a></li
-                        ><li><a href="galeria.html">Galería</a></li
-                        ><li><a href="informacion.html">Contacto y localización</a></li>
+                    <a href="pages/contacto.html" onclick="return openOrCloseSubmenu(event, 'centSub')"><img src="img/icons/building-white.svg"/>Nuestro centro</a>
+                    <ul class="subnav" id="centSub">
+                        <li><a href="pages/oferta.html">Oferta educativa</a></li
+                        ><li><a href="pages/secretaria.html">Secretaría online</a></li
+                        ><li><a href="pages/proyectos.html">Proyectos</a></li
+                        ><li><a href="pages/premios.html">Distinciones y premios</a></li
+                        ><li><a href="pages/galeria.html">Galería</a></li
+                        ><li><a href="pages/contacto.html">Contacto y localización</a></li>
                     </ul>
                 </li
                 ><li class="from-tablet-up">
-                    <a href=""><img src="img/icons/graduation-cap-white.svg"/>Alumnado</a>
-                    <ul class="subnav">
-                        <li><a href="">Calendario del curso</a></li
-                        ><li><a href="">Matrícula online 2015-16</a></li
-                        ><li><a href="">Listas de reserva</a></li
-                        ><li><a href="">Ciclos semipresenciales</a></li
-                        ><li><a href="">Convalidaciones</a></li
-                        ><li><a href="">Pincel Ekade</a></li
-                        ><li><a href="">Aulas virtuales</a></li
-                        ><li><a href="">Becas</a></li>
+                    <a href="pages/calendario.html" onclick="return openOrCloseSubmenu(event, 'alumnSub')"><img src="img/icons/graduation-cap-white.svg"/>Alumnado</a>
+                    <ul class="subnav" id="alumnSub">
+                        <li><a href="pages/calendario.html">Calendario del curso</a></li
+                        ><li><a href="http://moodle.ieselrincon.org:8080/matricula">Matrícula online 2015-16</a></li
+                        ><li><a href="pages/reserva.html">Listas de reserva</a></li
+                        ><li><a href="pages/semi.html">Ciclos semipresenciales</a></li
+                        ><li><a href="pages/convalidaciones.html">Convalidaciones</a></li
+                        ><li><a href="https://www.gobiernodecanarias.org/educacion/9/PEKWEB/Ekade/Account/LogOn?ReturnUrl=%2feducacion%2fPEKWEB%2fEkade%2f">Pincel Ekade</a></li
+                        ><li><a href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cas/login?service=http%3A%2F%2Fwww3.gobiernodecanarias.org%2Fmedusa%2Feforma%2Fcampus%2Flogin%2F">Aulas virtuales</a></li
+                        ><li><a href="pages/becas.html">Becas</a></li>
                     </ul>
                 </li
                 ><li class="from-tablet-up">
-                    <a href=""><img src="img/icons/suitcase-white.svg"/>Profesorado</a>
-                    <ul class="subnav">
-                        <li><a href="">Departamentos</a></li
-                        ><li><a href="">Cita previa tutores</a></li>
+                    <a href="pages/departamentos.html" onclick="return openOrCloseSubmenu(event, 'profSub')"><img src="img/icons/suitcase-white.svg"/>Profesorado</a>
+                    <ul class="subnav" id="profSub">
+                        <li><a href="pages/departamentos.html">Departamentos</a></li
+                        ><li><a href="pages/citaprevia.html">Cita previa tutores</a></li>
                     </ul>
                 </li
                 ><li class="mobile-only">
-                    <a href=""><img src="img/icons/menu.svg"/>Menú</a>
+                    <a href="" onclick="return openOrCloseSubmenu(event, 'mobileSub')"><img src="img/icons/menu.svg"/>Menú</a>
+					<ul class="subnav" id="mobileSub">
+                        <li><a href="index.html#noti"><img src="img/icons/news-white.svg"/>Noticias</a></li
+                        ><li><a href="" onclick="return openOrCloseSubmenu(event, 'centSub')"><img src="img/icons/building-white.svg"/>Nuestro centro</a></li
+                        ><li><a href="" onclick="return openOrCloseSubmenu(event, 'alumnSub')"><img src="img/icons/graduation-cap-white.svg"/>Alumnado</a></li
+                        ><li><a href="" onclick="return openOrCloseSubmenu(event, 'profSub')"><img src="img/icons/suitcase-white.svg"/>Profesorado</a></li>
+                    </ul>
                 </li
                 ><li class="hidden">
                     <a href=""><img src="img/icons/magnifying-glass.svg"/>Buscar</a>
@@ -157,18 +166,11 @@
         </section>
         <footer>
             <div id="mapa">
-                <h3>Mapa del sitio</h3>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Noticias</li>
-                    <li>Nuestro centro</li>
-                    <li>Alumnado</li>
-                    <li>Profesorado</li>
-                </ul>
+                <a href="pages/sitemap.html"><img src="img/icons/map.svg" alt=""/>Ver el mapa del sitio</a>
             </div>
-            <div id="centro">
-                <img id="logoFooter" src="img/logo/logo-white.png" alt="Logo del IES El Rincón"/>
-            </div>
+			<div id="centro">
+				<img id="logoFooter" src="img/logo/logo-white.png" alt="Logo del IES El Rincón"/>
+			</div>
             <div id="derecha">
                 <div id="redes">
                     <a href="https://www.facebook.com/ieselrincon/">
@@ -182,9 +184,10 @@
                     </a>
                 </div>
                 <div id="contacto">
-                    <p>Información de contacto del centro</p>
-                    <p>Calle tal S/N IES El Rincón</p>
-                    <p>Teléfono: 999223344</p>
+                    <p><strong>Av. Industrial José Sánchez Peñate S/N</strong><br/>
+					35010 Las Palmas de Gran Canaria<br/>
+					Las Palmas, España<br/>
+					<a href="pages/contacto.html">&#x25BA;  Más información</a></p>
                 </div>
             </div>
         </footer>

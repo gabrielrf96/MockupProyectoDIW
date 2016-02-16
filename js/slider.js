@@ -1,4 +1,5 @@
 var currentImg = 1;
+var isIndex = isIndex || false;
 var auto;
 
 function clearCurrentActiveSelector() {
@@ -15,7 +16,7 @@ function setImg() {
 	var slider = document.getElementById("slider");
 	slider.className = "fadeOut";
 	setTimeout(function() {
-		slider.style["background-image"] = "url(img/slider/" + currentImg + ".jpg)";
+		slider.style["background-image"] = "url(" + (isIndex ? "":"../") + "img/slider/" + currentImg + ".jpg)";
 		slider.className = "fadeIn";
 	}, 250);
 	setCurrentActiveSelector();

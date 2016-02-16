@@ -1,0 +1,94 @@
+
+section  img {
+	width: 35px;
+	vertical-align: top;
+	margin-right: 15px;
+}
+
+section {
+	text-align: center;
+}
+
+section * {
+	font-family: Montserrat;
+}
+
+section a {
+	color: #0A4582;
+	text-decoration: none;
+}
+
+section a:hover {
+	text-decoration: underline;
+}
+
+section ul {
+	list-style-type: none;
+	vertical-align: middle;
+	text-align: left;
+}
+
+section > ul {
+	margin: 0% 2.5%;
+	padding: 0;
+	display: inline-block;
+	list-style-type: none;
+}
+
+section > ul > li{
+	margin-top: 20px;
+}
+
+section > ul > li > a {
+	font-size: 2em;
+}
+
+section > ul > li > ul {
+	margin-left: 70px;
+	padding: 0;
+}
+
+section > ul > li > ul > li > a {
+	font-size: 1.5em;
+	color: #155EA9;
+}
+
+@media screen and (min-width: 1500px) {
+	section > ul > li > a {
+		font-size: 2em;
+	}
+
+	section > ul > li > ul > li > a {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	section > ul > li > a {
+		font-size: 1.6em;
+	}
+
+	section > ul > li > ul > li > a {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	section > ul > li > a {
+		font-size: 1.5em;
+	}
+
+	section > ul > li > ul > li > a {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	section > ul > li > a {
+		font-size: 1.4em;
+	}
+
+	section > ul > li > ul > li > a {
+		font-size: 1.25em;
+	}
+}

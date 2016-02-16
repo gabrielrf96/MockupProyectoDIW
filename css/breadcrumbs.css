@@ -1,0 +1,89 @@
+
+@media screen and (max-width: 700px) {
+	#breadcrumbs {
+		margin-left: -2% !important;
+	}
+
+	#breadcrumbs li {
+		font-size: .65em !important;
+		height: 25px !important;
+		line-height: 25px !important;
+	}
+}
+
+#breadcrumbs { 
+	list-style-type: none; 
+	overflow: hidden; 
+	font-family: Montserrat;
+	margin-left: 3%;
+}
+
+#breadcrumbs li {
+	float: left;
+	color: #FFFFFF;
+	text-decoration: none; 
+	padding: 5px;
+	padding-left: 65px;
+	background-color: #558DC7; 
+	position: relative; 
+	display: block;
+	height: 35px;
+	line-height: 35px;
+}
+
+#breadcrumbs li * {
+	vertical-align: middle;
+}
+
+#breadcrumbs li:first-of-type {
+	padding-left: 20px;
+}
+
+#breadcrumbs li:last-of-type {
+	background-color: #155EA9;
+}
+
+#breadcrumbs li:last-of-type::after {
+	border-left: 30px solid #155EA9 !important;
+}
+
+#breadcrumbs a {
+	color: white;
+	text-decoration: underline;
+}
+
+#breadcrumbs li::after { 
+	content: ""; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid #558DC7;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}
+
+#breadcrumbs li::before { 
+	content: ""; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;       
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}
+
+#breadcrumbs img {
+	height: 98%;
+	vertical-align: top;
+}

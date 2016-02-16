@@ -6,12 +6,12 @@ function interact(code) {
 		block.classList.remove("expandAnim");
 		article.classList.remove("expanded");
 		block.classList.add("collapseAnim");
-		button.src="img/icons/chevron-with-circle-down.svg";
+		button.src="../img/icons/chevron-with-circle-down.svg";
 	} else {
 		if (block.classList.contains("collapseAnim"))
 			block.classList.remove("collapseAnim");
 		block.classList.add("expandAnim");
 		article.classList.add("expanded");
-		button.src="img/icons/chevron-with-circle-up.svg";
+		button.src="../img/icons/chevron-with-circle-up.svg";
 	}
 }

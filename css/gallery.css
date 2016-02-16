@@ -40,8 +40,9 @@ a:hover img.gallery {
 
 .imgDisplay {
 	border: 0.3em #80ADDC solid;
-	height: 25em;
+	height: 25vw;
 	width:80%;
+	max-width: 1300px;
 	margin:auto;
 	text-align:center;
 	position:relative;
@@ -59,6 +60,7 @@ div.imgDisplay img {
 .minisDisplay {
 	height:4em;
 	width:80%;
+	max-width: 1300px;
 	margin:0.3em auto auto auto;
 }
 
@@ -127,6 +129,10 @@ border:0.5em #155EA9 solid;
 	.arrow {
 	width: 4%;
 	}
+	
+	.imgDisplay {
+		height: 30vw;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -145,5 +151,9 @@ border:0.5em #155EA9 solid;
 	}
 	.arrow {
 		width: 7%;
+	}
+	
+	.imgDisplay {
+		height: 40vw;
 	}
 }
