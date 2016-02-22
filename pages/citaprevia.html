@@ -95,8 +95,12 @@
 				<li><a href="departamentos.html">Profesorado</a></li>
 				<li>Cita previa tutores</li>
 			</ul>
-			<form>
+			<form method="POST">
 				<h2>Cita previa tutores</h2>
+					<h3>Nombre y apellidos del solicitante</h3>
+					<input type="text" id="nomApe" />
+					<h3>Correo electrónico del solicitante</h3>
+					<input type="text" id="email" />
 					<h3>Seleccione el curso</h3>
 					<select id="categorias" onchange="cambio()">
 						<optgroup label="Educación secundaria">
@@ -126,7 +130,7 @@
 					</select>
 					<h3>Mensaje para el tutor (opcional)</h3>
 					<textarea name="mensaje"></textarea>
-				<input type="submit" value="Solicitar"/>
+				<input type="submit" value="Enviar solicitud"/>
 			</form>
 		</section>
 		<footer>

@@ -9,7 +9,12 @@ section label, section input, section select {
 }
 
 section select {
-	margin-bottom: 3%;
+	margin-bottom: 2%;
+	width: 30%;
+	font-size: 1.1em;
+}
+section input[type=text] {
+	margin-bottom: 2%;
 	width: 30%;
 	font-size: 1.1em;
 }
@@ -17,6 +22,7 @@ section select {
 section input[type=submit] {
 	font-family: Montserrat;
 	font-size: 1.2em;
+	margin-top:2%;
 	margin-bottom: 3%;
 }
 
