@@ -102,6 +102,7 @@ function handleGalleryChange() {
 		boxNumber = 4;
 		placeImg();
 		setSelected();
+		setGalleryPlace();
 	}
 	else
 		if (mediaMid.matches) {
@@ -109,11 +110,13 @@ function handleGalleryChange() {
 			boxNumber = 8;
 			placeImg();
 			setSelected();
+			setGalleryPlace();
 		}
 	if(mediaBig.matches) {
 		firstPic = 1;
 		boxNumber = 14;
 		placeImg();
 		setSelected();
+		setGalleryPlace();
 	}
 }
