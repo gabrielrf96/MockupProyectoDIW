@@ -2,21 +2,20 @@
 
 <html lang="es-ES">
 	<head>
-		<title>Galería - IES El Rincón</title>
+		<title>Consejo escolar - IES El Rincón</title>
 		<meta name="author" content="Judix"/>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="../css/header.css"/>
 		<link rel="stylesheet" href="../css/common.css"/>
-		<link rel="stylesheet" href="../css/gallery.css"/>
+		<link rel="stylesheet" href="../css/info.css"/>
 		<link rel="stylesheet" href="../css/footer.css"/>
 		<link rel="stylesheet" href="../css/breadcrumbs.css"/>
 		<script type="text/javascript" src="../js/slider.js"></script>
 		<script type="text/javascript" src="../js/expand.js"></script>
 		<script type="text/javascript" src="../js/stickynav.js"></script>
-		<script type="text/javascript" src="../js/gallery.js"></script>
 		<script type="text/javascript" src="../js/responsiveSubmenu.js"></script>
 	</head>
-	<body onload="loadGallery();">
+	<body>
 		<header>
 			<div id="identificacion">
 				<img id="logo" src="../img/logo/logo-white.png" alt="Logo del IES El Rincón"/>
@@ -96,31 +95,70 @@
 		<section>
 			<ul id="breadcrumbs">
 				<li><a href="../index.html"><img src="../img/icons/home-white.svg"/></a></li>
-				<li><a href="contacto.html">Nuestro centro</a></li>
-				<li>Galería</li>
+				<li><a href="calendario.html">Nuestro centro</a></li>
+				<li>Consejo escolar</li>
 			</ul>
-			<h2>Galería del centro</h2>
-			<div class="selectContainer">
-				<select>
-					<option>Curso 2015-16</option>
-					<option>Curso 2014-15</option>
-					<option>Curso 2013-14</option>
-				</select>
-			</div>
-			<div class="selectContainer">
-				<select>
-					<option>Categoría 1</option>
-					<option>Categoría 2</option>
-				</select>
-			</div>
-			<div class="imgDisplay">
-				<img alt="Imagen central" id="display" src="../img/gallery/rincon1.jpg" />
-				<a id="galleryPrev" href="" onclick="previousGalleryImg(); return false;"><img class="gallery" src="../img/icons/chevron-with-circle-left-white.svg" alt="Anterior"/></a>
-				<a id="galleryNext" href="" onclick="nextGalleryImg(); return false;"><img class="gallery" src="../img/icons/chevron-with-circle-right-white.svg" alt="Siguiente"/></a>
-			</div>
-			<div id="minis" class="minisDisplay">
-				<img class="arrow" src="../img/icons/chevron-with-circle-left.svg" alt="Anterior" onclick="previousScroll();" /><img onclick="setCentralImg(this);" class="mini0" /><img onclick="setCentralImg(this);" class="mini0" /><img onclick="setCentralImg(this);" class="mini0" /><img onclick="setCentralImg(this);" class="mini0" /><img onclick="setCentralImg(this);" class="mini1" /><img onclick="setCentralImg(this);" class="mini1" /><img onclick="setCentralImg(this);" class="mini1" /><img onclick="setCentralImg(this);" class="mini1" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img onclick="setCentralImg(this);" class="mini2" /><img class="arrow" src="../img/icons/chevron-with-circle-right.svg" alt="Siguiente" onclick="nextScroll();" />
-			</div>
+			<h2>Consejo escolar</h2>
+			<article>
+				<a href="" class="infoHead expand" onclick="interact(1); return false;">
+					<img src="../img/icons/chevron-with-circle-down.svg" id="btn1"/>
+					<h3>Profesores y profesoras</h3>
+				</a>
+				<div class="infoBody" id="info1">
+					<img src="../img/info/1.jpg"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+				</div>
+			</article>
+			<article>
+				<a href="" class="infoHead expand" onclick="interact(2); return false;">
+					<img src="../img/icons/chevron-with-circle-down.svg" id="btn2"/>
+					<h3>Padres y madres</h3>
+				</a>
+				<div class="infoBody" id="info2">
+					<img src="../img/info/1.jpg"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+				</div>
+			</article>
+			<article>
+				<a href="" class="infoHead expand" onclick="interact(3); return false;">
+					<img src="../img/icons/chevron-with-circle-down.svg" id="btn3"/>
+					<h3>Alumnos y alumnas</h3>
+				</a>
+				<div class="infoBody" id="info3">
+					<img src="../img/info/1.jpg"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+				</div>
+			</article>
 		</section>
 		
 		<footer>

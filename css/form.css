@@ -33,3 +33,9 @@ section h3 {
 	width: 100%;
 }
 
+#horario {
+	width: 70%;
+	max-width: 1100px;
+	min-width: 200px;
+}
+

@@ -10,6 +10,11 @@
 	}
 }
 
+.infoSubBlock {
+	overflow: hidden;
+	margin: .5em;
+}
+
 article {
 	margin: auto;
 	margin-bottom: 2%;
