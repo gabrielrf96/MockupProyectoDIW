@@ -24,10 +24,6 @@
             </div>
             <img id="gobcan" src="img/logo/gobcan.png"
             alt="Gobierno de Canarias, Consejería de Educación, Universidades y Sostenibilidad"/>
-            <form method="get" action="">
-                <input type="search" name="q" placeholder="Buscar..."/>
-                <button type="submit" title="Buscar"></button>
-            </form>
         </header>
         <nav>
             <ul>
@@ -77,9 +73,16 @@
                         ><li><a href="" onclick="return openOrCloseSubmenu(event, 'profSub')"><img src="img/icons/suitcase-white.svg"/>Profesorado</a></li>
                     </ul>
                 </li
-                ><li class="hidden">
-                    <a href=""><img src="img/icons/magnifying-glass.svg"/>Buscar</a>
-                </li>
+				><li class="smaller noexpand">
+					<form method="get" action="">
+						<input type="search" name="q" placeholder="Buscar..."/>
+						<a href="" id="sch" onclick="return openOrCloseSubmenu(event, 'searchSub')"><img src="img/icons/magnifying-glass.svg"/></a>
+						<ul class="subnav" id="searchSub">
+							<li class="noclose"><input class="noclose" type="search" name="q" placeholder="Buscar..."/>
+							<a href="" class="evenSmaller" onclick="return openOrCloseSubmenu(event, 'searchSub')"><img src="img/icons/magnifying-glass.svg"/></a></li>
+						</ul>
+					</form>
+				</li>
             </ul>
         </nav>
         <div id="sliderContainer">

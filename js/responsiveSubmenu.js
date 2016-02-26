@@ -1,13 +1,15 @@
 window.addEventListener("load", function() {
-	document.onclick = hideActive;
+	document.onclick = function() {hideActive(event)};
 });
 
 function openOrCloseSubmenu(event, id) {
 	event.stopPropagation();
-	if (document.documentElement.clientWidth <= 1000) {
+	var width = document.documentElement.clientWidth;
+	var source = event.currentTarget;
+	if ( width <= 979 || (width <= 1145 && source.id=="sch") ) {
 		var elm = document.getElementById(id);
 		var disp = elm.style.display;
-		hideActive();
+		hideActive(event);
 		if (elm.classList.contains("activeSub"))
 			elm.classList.remove("activeSub");
 		else
@@ -17,9 +19,10 @@ function openOrCloseSubmenu(event, id) {
 	}
 }
 
-function hideActive() {
+function hideActive(event) {
 	var active = document.getElementsByClassName("activeSub")[0];
-	if (active != null) {
+	var source = event.target || event.srcElement;
+	if (active != null && !source.classList.contains("noclose")) {
 		active.classList.remove("activeSub");
 		active.style.display = "none";
 	}
