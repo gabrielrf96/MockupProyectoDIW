@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+	<head>
+		<title>Ciclos semipresenciales - IES El Rincón</title>
+		<meta name="author" content="Judix"/>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="../css/header.css"/>
+		<link rel="stylesheet" href="../css/common.css"/>
+		<link rel="stylesheet" href="../css/info.css"/>
+		<link rel="stylesheet" href="../css/footer.css"/>
+		<link rel="stylesheet" href="../css/breadcrumbs.css"/>
+		<script type="text/javascript" src="../js/slider.js"></script>
+		<script type="text/javascript" src="../js/expand.js"></script>
+		<script type="text/javascript" src="../js/stickynav.js"></script>
+		<script type="text/javascript" src="../js/responsiveSubmenu.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="identificacion">
+				<img id="logo" src="../img/logo/logo-white.png" alt="Logo del IES El Rincón"/>
+				<h1>IES El Rincón</h1>
+			</div>
+			<img id="gobcan" src="../img/logo/gobcan.png"
+			alt="Gobierno de Canarias, Consejería de Educación, Universidades y Sostenibilidad"/>
+		</header>
+		<nav>
+            <ul>
+                <li id="index"><a href="../index.html"><img src="../img/icons/home-white.svg"/>Inicio</a></li
+                ><li id="news" class="from-tablet-up"><a id="newsLink" href="../index.html#noti"><img src="../img/icons/news-white.svg"/>Noticias</a></li
+                ><li class="from-tablet-up">
+                    <a href="contacto.html" onclick="return openOrCloseSubmenu(event, 'centSub')"><img src="../img/icons/building-white.svg"/>Nuestro centro</a>
+                    <ul class="subnav" id="centSub">
+                        <li><a href="directiva.html">Dirección y administración</a></li
+                        ><li><a href="consejo.html">Consejo escolar</a></li
+                        ><li><a href="ampa.html">AMPA</a></li
+                        ><li><a href="secretaria.html">Secretaría online</a></li
+                        ><li><a href="oferta.html">Oferta educativa</a></li
+                        ><li><a href="proyectos.html">Proyectos</a></li
+                        ><li><a href="premios.html">Distinciones y premios</a></li
+                        ><li><a href="galeria.html">Galería</a></li
+                        ><li><a href="contacto.html">Contacto y localización</a></li>
+                    </ul>
+                </li
+                ><li class="from-tablet-up activo">
+                    <a href="calendario.html" onclick="return openOrCloseSubmenu(event, 'alumnSub')"><img src="../img/icons/graduation-cap-white.svg"/>Alumnado</a>
+                    <ul class="subnav" id="alumnSub">
+                        <li><a href="calendario.html">Calendario del curso</a></li
+                        ><li><a href="horarios.html">Horarios de clase</a></li
+                        ><li><a href="http://moodle.ieselrincon.org:8080/matricula">Matrícula online 2015-16</a></li
+                        ><li><a href="reserva.html">Listas de reserva</a></li
+                        ><li><a href="semi.html">Ciclos semipresenciales</a></li
+                        ><li><a href="convalidaciones.html">Convalidaciones</a></li
+                        ><li><a href="https://www.gobiernodecanarias.org/educacion/9/PEKWEB/Ekade/Account/LogOn?ReturnUrl=%2feducacion%2fPEKWEB%2fEkade%2f">Pincel Ekade</a></li
+                        ><li><a href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cas/login?service=http%3A%2F%2Fwww3.gobiernodecanarias.org%2Fmedusa%2Feforma%2Fcampus%2Flogin%2F">Aulas virtuales</a></li
+                        ><li><a href="becas.html">Becas</a></li>
+                    </ul>
+                </li
+                ><li class="from-tablet-up">
+                    <a href="departamentos.html" onclick="return openOrCloseSubmenu(event, 'profSub')"><img src="../img/icons/suitcase-white.svg"/>Profesorado</a>
+                    <ul class="subnav" id="profSub">
+                        <li><a href="departamentos.html">Departamentos</a></li
+                        ><li><a href="citaprevia.html">Cita previa tutores</a></li>
+                    </ul>
+                </li
+                ><li class="mobile-only">
+                    <a href="" onclick="return openOrCloseSubmenu(event, 'mobileSub')"><img src="../img/icons/menu.svg"/>Menú</a>
+					<ul class="subnav" id="mobileSub">
+                        <li><a href="../index.html#noti"><img src="../img/icons/news-white.svg"/>Noticias</a></li
+                        ><li><a href="" onclick="return openOrCloseSubmenu(event, 'centSub')"><img src="../img/icons/building-white.svg"/>Nuestro centro</a></li
+                        ><li><a href="" onclick="return openOrCloseSubmenu(event, 'alumnSub')"><img src="../img/icons/graduation-cap-white.svg"/>Alumnado</a></li
+                        ><li><a href="" onclick="return openOrCloseSubmenu(event, 'profSub')"><img src="../img/icons/suitcase-white.svg"/>Profesorado</a></li>
+                    </ul>
+                </li
+				><li class="smaller noexpand">
+					<form method="get" action="">
+						<input type="search" name="q" placeholder="Buscar..."/>
+						<a href="" id="sch" onclick="return openOrCloseSubmenu(event, 'searchSub')"><img src="../img/icons/magnifying-glass.svg"/></a>
+						<ul class="subnav" id="searchSub">
+							<li class="noclose"><input class="noclose" type="search" name="q" placeholder="Buscar..."/>
+							<a href="" class="evenSmaller" onclick="return openOrCloseSubmenu(event, 'searchSub')"><img src="../img/icons/magnifying-glass.svg"/></a></li>
+						</ul>
+					</form>
+				</li>
+            </ul>
+        </nav>
+		<div id="sliderContainer">
+			<div id="slider">
+				<a id="prev" href="" onclick="previousImg(); return false;"><img src="../img/icons/chevron-with-circle-left-white.svg" alt="Anterior"/></a>
+				<a id="next" href="" onclick="nextImg(); return false;"><img src="../img/icons/chevron-with-circle-right-white.svg" alt="Siguiente"/></a>
+				<div id="selectors">
+					<a id="selector1" class="selector selectorActivo" href="" onclick="goTo(1); return false;"></a>
+					<a id="selector2" class="selector" href="" onclick="goTo(2); return false;"></a>
+				</div>
+			</div>
+		</div>
+		
+		<section>
+			<ul id="breadcrumbs">
+				<li><a href="../index.html"><img src="../img/icons/home-white.svg"/></a></li>
+				<li><a href="calendario.html">Alumnado</a></li>
+				<li>Ciclos semipresenciales</li>
+			</ul>
+			<h2>Ciclos semipresenciales</h2>
+			<article>
+				<a href="" class="infoHead expand" onclick="interact(1); return false;">
+					<img src="../img/icons/chevron-with-circle-down.svg" id="btn1"/>
+					<h3>¿Cúales puedo realizar?</h3>
+				</a>
+				<div class="infoBody" id="info1">
+					<img src="../img/info/1.jpg"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+				</div>
+			</article>
+			<article>
+				<a href="" class="infoHead expand" onclick="interact(2); return false;">
+					<img src="../img/icons/chevron-with-circle-down.svg" id="btn2"/>
+					<h3>¿Cuáles son las condiciones?</h3>
+				</a>
+				<div class="infoBody" id="info2">
+					<img src="../img/info/1.jpg"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+				</div>
+			</article>
+			<article>
+				<a href="" class="infoHead expand" onclick="interact(3); return false;">
+					<img src="../img/icons/chevron-with-circle-down.svg" id="btn3"/>
+					<h3>¿Cómo me apunto?</h3>
+				</a>
+				<div class="infoBody" id="info3">
+					<img src="../img/info/1.jpg"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere in nisl efficitur placerat. Curabitur ipsum odio, 
+					pharetra eget diam a, ultricies finibus dui. Nulla et egestas nulla. Etiam accumsan massa orci, id bibendum augue mattis sit amet. 
+					Cras non risus quis ex tristique sodales sed ac justo. Integer gravida nunc non gravida tincidunt. Aenean varius nulla augue, 
+					quis sollicitudin dolor pharetra at.</p>
+				</div>
+			</article>
+		</section>
+		
+		<footer>
+            <div id="mapa">
+                <a href="sitemap.html"><img src="../img/icons/map.svg" alt=""/>Ver el mapa del sitio</a>
+            </div>
+			<div id="centro">
+				<img id="logoFooter" src="../img/logo/logo-white.png" alt="Logo del IES El Rincón"/>
+			</div>
+            <div id="derecha">
+                <div id="redes">
+                    <a href="https://www.facebook.com/ieselrincon/">
+                        <img src="../img/icons/Facebook.svg" alt="Facebook"/>
+                    </a>
+                    <a href="https://twitter.com/@ieselrincon/">
+                        <img src="../img/icons/Twitter.svg" alt="Twitter"/>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCggv8pAKfTxJcbVHxImlGRg/">
+                        <img src="../img/icons/Youtube.svg" alt="YouTube"/>
+                    </a>
+                </div>
+                <div id="contacto">
+                    <p><strong>Av. Industrial José Sánchez Peñate S/N</strong><br/>
+					35010 Las Palmas de Gran Canaria<br/>
+					Las Palmas, España<br/>
+					<a href="contacto.html">&#x25BA;  Más información</a></p>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>
